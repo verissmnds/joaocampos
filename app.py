@@ -42,36 +42,40 @@ def main():
     st.header("Todas as publicações analisadas")
     st.dataframe(df)
     
-    st.header("10 publicações com mais engajamento")
+    st.header("As 10 publicações com mais engajamento")
     st.dataframe(df2.sort_values(by='Total Interactions', ascending=False).head(10))
     st.markdown("Escreva a análise aqui")
 
     st.header('Economia')
+    st.markdown("Aqui estão as publicações relacionadas ao tema Economia")
     st.dataframe(df2[df2['Temas'] == 'Economia'])
-    st.markdown("Escreva a análise aqui")
+    
 
 
     st.header('Educação')
+    st.markdown("Aqui estão as publicações relacionadas ao tema Educação")
     st.dataframe(df2[df2['Temas'] == 'Educacao'])
-    st.markdown("Escreva a análise aqui")
 
 
     st.header('Infraestrutura')
+    st.markdown("Aqui estão as publicações relacionadas ao tema Infraestrutura")
     st.dataframe(df2[df2['Temas'] == 'Infraestrutura'])
-    st.markdown("Escreva a análise aqui")
 
 
     st.header('Segurança')
+    st.markdown("Aqui estão as publicações relacionadas ao tema Segurança")
     st.dataframe(df2[df2['Temas'] == 'Seguranca'])
-    st.markdown("Escreva a análise aqui")
+   
 
     st.header('Saúde')
+    st.markdown("Aqui estão as publicações relacionadas ao tema Saúde")
     st.dataframe(df2[df2['Temas'] == 'Saúde'])
-    st.markdown("Escreva a análise aqui")
+    
 
     st.header('Religião')
+    st.markdown("Aqui estão as publicações relacionadas ao tema Religião")
     st.dataframe(df2[df2['Temas'] == 'Religião'])
-    st.markdown("Escreva a análise aqui")
+    
 
 
 
