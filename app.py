@@ -12,7 +12,7 @@ economia = 'economia|dinheiro|finança|emprego|taxa|imposto|sal.rio'
 educacao = 'educa..o|escola|estudante|alun.|ensino|aprend|profess|aula|rede p.blica'
 infraestrutura = 'infraestrutura|estrutura|constru..o|obra|asfalto|pavimenta..o|cal..ada|ponte|viaduto|t..nel|buraco|bueiro|esgoto|luz|energia|ilumina..o|lumin.r|pra[çc]a|limpeza|canal|chuva|barreira|lixo'
 seguranca = 'segurança|crime|vigil.ncia|pol.cia|b.o|boletim|ocorrência|assalto|roubo|furto|tráfico|droga|arma|tiro|bala|assassinato|assassino|assassinar|assassina|assassine|assassinei|assassineis|assassinar|assassinar|assassinaram|assassinaram|assassin'
-saude = 'saúde|hospital|vacin.|cl.nica|preven'
+saude = 'saúde|hospital|vacina|cl.nica|preven'
 religiao = 'fé|sant[ao]|igreja|relig.|divina|orat.ri.|nossa senhora|aparecida'
 
 # Condições
@@ -24,7 +24,7 @@ condicoes = [df['Description'].str.contains(economia, na=False, case=False, rege
                 df['Description'].str.contains(religiao, na=False, case=False, regex=True)]
 
 # Escolhas
-choices = ['Economia', 'Educacao', 'Infraestrutura', 'Seguranca', 'Saúde', 'Religião']
+choices = ['Economia', 'Educacao', 'Infraestrutura', 'Saúde', 'Segurança', 'Religião']
 
 # Cria a variável TEMAS
 df['Temas'] = np.select(condicoes, choices, default='Outros')
