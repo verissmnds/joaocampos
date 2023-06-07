@@ -35,9 +35,13 @@ def main():
     st.title('A Campanha Permanente do Prefeito João Campos no Instagram: dados extraídos das suas publicações.')
     st.caption('Por Bruna Verissimo, graduanda em Comunicação Digital na Fundação Getúlio Vargas')
     st.markdown("""
-    Abaixo a organização dos dados está feita de modo que você consiga ter acesso a cada uma das publicações e entender melhor a maneira como elas estão dispostas. Como dito no artigo, cada assunto foi filtrado a partir de palavras-chave, mas não espere encontrar uma total precisão nesses filtros, pois os termos que coincidem com saúde, por exemplo, podem estar presentes em publicações relacionadas à segurança, ou em muitos contextos diferentes. Nossa língua portuguesa é diversa e variada."
+    Abaixo a organização dos dados está feita de modo que você consiga ter acesso a cada uma das publicações e entenda melhor a maneira como elas estão dispostas. Como dito no artigo, cada assunto foi filtrado a partir de palavras-chave, mas não espere encontrar uma total precisão nesses filtros, pois os termos que coincidem com saúde, por exemplo, podem estar presentes em publicações relacionadas à segurança, ou em muitos outros contextos diferentes. Nossa língua portuguesa é diversa e variada. Fique à vontade para me enviar qualquer sugestão para aprimorar o programa, meu e-mail é: brunaverissimoecmi@gmail.com  :)
     """)
 
+    
+    st.header("Todas as publicações analisadas")
+    st.dataframe(df)
+    
     st.header("10 publicações com mais engajamento")
     st.dataframe(df2.sort_values(by='Total Interactions', ascending=False).head(10))
     st.markdown("Escreva a análise aqui")
