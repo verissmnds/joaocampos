@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
+st.image('foto site.png', width=100)
+
 st.set_page_config(page_title="A Campanha Permanente do Prefeito João Campos: dados extraídos das suas publicações.", page_icon="📐", layout="wide")
 
 df = pd.read_excel('JoaoCampos.xlsx')
