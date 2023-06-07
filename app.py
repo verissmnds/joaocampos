@@ -11,7 +11,7 @@ df['Total Interactions'] = df['Total Interactions'].apply(lambda x: x.replace(',
 economia = 'economia|dinheiro|finança|emprego|taxa|imposto|sal.rio'
 educacao = 'educa..o|escola|estudante|alun.|ensino|aprend|profess|aula|rede p.blica'
 infraestrutura = 'infraestrutura|estrutura|constru..o|obra|asfalto|pavimenta..o|cal..ada|ponte|viaduto|t..nel|buraco|bueiro|esgoto|luz|energia|ilumina..o|lumin.r|pra[çc]a|limpeza|canal|chuva|barreira|lixo'
-seguranca = 'segurança|crime|proteção|vigil.ncia|pol.cia|b.o|boletim|ocorrência|assalto|roubo|furto|tráfico|droga|arma|tiro|bala|assassinato|assassino|assassinar|assassina|assassine|assassinei|assassineis|assassinar|assassinar|assassinaram|assassinaram|assassin'
+seguranca = 'segurança|crime|vigil.ncia|pol.cia|b.o|boletim|ocorrência|assalto|roubo|furto|tráfico|droga|arma|tiro|bala|assassinato|assassino|assassinar|assassina|assassine|assassinei|assassineis|assassinar|assassinar|assassinaram|assassinaram|assassin'
 saude = 'saúde|hospital|vacina|cl.nica|preven'
 religiao = 'fé|sant[ao]|igreja|relig.|divina|orat.ri.|nossa senhora|aparecida'
 
@@ -33,7 +33,7 @@ df2 = df[['Account', 'Post Created', 'Type', 'Total Interactions', 'Description'
 def main():
 
     st.title('Publicações de João Campos')
-    st.caption('Por: Bruna Veríssimo')
+    st.caption('Por: Bruna VerIssimo')
     st.markdown("""
     Aqui estão todas as publicações de João Campos, organizadas cronologicamente, etc etc etc
     """)
