@@ -12,7 +12,7 @@ economia = 'economia|dinheiro|finança|emprego|taxa|imposto|sal.rio'
 educacao = 'educa..o|escola|estudante|alun.|ensino|aprend|profess|aula|rede p.blica'
 infraestrutura = 'infraestrutura|estrutura|constru..o|obra|asfalto|pavimenta..o|cal..ada|ponte|viaduto|t..nel|buraco|bueiro|esgoto|luz|energia|ilumina..o|lumin.r|pra[çc]a|limpeza|canal|chuva|barreira|lixo'
 seguranca = 'segurança|crime|vigil.ncia|pol.cia|b.o|boletim|ocorrência|assalto|roubo|furto|tráfico|droga|arma|tiro|bala|assassinato|assassino|assassinar|assassina|assassine|assassinei|assassineis|assassinar|assassinar|assassinaram|assassinaram|assassin'
-saude = 'saúde|hospital|prevenção|vacina|cl.nica|preven'
+saude = 'saúde|hospital|vacin.|cl.nica|preven'
 religiao = 'fé|sant[ao]|igreja|relig.|divina|orat.ri.|nossa senhora|aparecida'
 
 # Condições
