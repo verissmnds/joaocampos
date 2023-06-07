@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-st.set_page_config(page_title="Publicação de João Campos", page_icon="📐", layout="wide")
+st.set_page_config(page_title="A Campanha Permanente do Prefeito João Campos: dados extraídos das suas publicações.", page_icon="📐", layout="wide")
 
 df = pd.read_excel('JoaoCampos.xlsx')
 df['Total Interactions'] = df['Total Interactions'].apply(lambda x: x.replace(',', '')).astype(int)
@@ -32,40 +32,40 @@ df['Temas'] = np.select(condicoes, choices, default='Outros')
 df2 = df[['Account', 'Post Created', 'Type', 'Total Interactions', 'Description', 'Temas', 'Link']]
 def main():
 
-    st.title('Publicações de João Campos')
-    st.caption('Por: Bruna VerIssimo')
+    st.title('A Campanha Permanente do Prefeito João Campos no Instagram: dados extraídos das suas publicações.')
+    st.caption('Por Bruna Verissimo, graduanda em Comunicação Digital na Fundação Getúlio Vargas')
     st.markdown("""
-    Aqui estão todas as publicações de João Campos, organizadas cronologicamente, etc etc etc
+    Abaixo a organização dos dados está feita de modo que você consiga ter acesso a cada uma das publicações e entender melhor a maneira como elas estão dispostas. Como dito no artigo, cada assunto foi filtrado a partir de palavras-chave, mas não espere encontrar uma total precisão nesses filtros, pois os termos que coincidem com saúde, por exemplo, podem estar presentes em publicações relacionadas à segurança, ou em muitos contextos diferentes. Nossa língua portuguesa é diversa e variada."
     """)
 
     st.header("10 publicações com mais engajamento")
     st.dataframe(df2.sort_values(by='Total Interactions', ascending=False).head(10))
     st.markdown("Escreva a análise aqui")
 
-    st.header('Tema: Economia')
+    st.header('Economia')
     st.dataframe(df2[df2['Temas'] == 'Economia'])
     st.markdown("Escreva a análise aqui")
 
 
-    st.header('Tema: Educação')
+    st.header('Educação')
     st.dataframe(df2[df2['Temas'] == 'Educacao'])
     st.markdown("Escreva a análise aqui")
 
 
-    st.header('Tema: Infraestrutura')
+    st.header('Infraestrutura')
     st.dataframe(df2[df2['Temas'] == 'Infraestrutura'])
     st.markdown("Escreva a análise aqui")
 
 
-    st.header('Tema: Segurança')
+    st.header('Segurança')
     st.dataframe(df2[df2['Temas'] == 'Seguranca'])
     st.markdown("Escreva a análise aqui")
 
-    st.header('Tema: Saúde')
+    st.header('Saúde')
     st.dataframe(df2[df2['Temas'] == 'Saúde'])
     st.markdown("Escreva a análise aqui")
 
-    st.header('Tema: Religião')
+    st.header('Religião')
     st.dataframe(df2[df2['Temas'] == 'Religião'])
     st.markdown("Escreva a análise aqui")
 
