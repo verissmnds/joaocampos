@@ -61,11 +61,6 @@ def main():
     st.header('Infraestrutura')
     st.markdown("Aqui estão as publicações relacionadas ao tema Infraestrutura")
     st.dataframe(df2[df2['Temas'] == 'Infraestrutura'])
-
-
-    st.header('Segurança')
-    st.markdown("Aqui estão as publicações relacionadas ao tema Segurança")
-    st.dataframe(df2[df2['Temas'] == 'Seguranca'])
    
 
     st.header('Saúde')
