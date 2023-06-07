@@ -19,8 +19,8 @@ religiao = 'fé|sant[ao]|igreja|relig.|divina|orat.ri.|nossa senhora|aparecida'
 condicoes = [df['Description'].str.contains(economia, na=False, case=False, regex=True),
                 df['Description'].str.contains(educacao, na=False, case=False, regex=True),
                 df['Description'].str.contains(infraestrutura, na=False, case=False, regex=True),
-                df['Description'].str.contains(seguranca, na=False, case=False, regex=True),
                 df['Description'].str.contains(saude, na=False, case=False, regex=True),
+                df['Description'].str.contains(seguranca, na=False, case=False, regex=True),
                 df['Description'].str.contains(religiao, na=False, case=False, regex=True)]
 
 # Escolhas
