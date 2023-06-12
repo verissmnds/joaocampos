@@ -73,6 +73,10 @@ def main():
     st.dataframe(df2[df2['Temas'] == 'Religião'])
     
 
+    st.header('Segurança')
+    st.markdown("Aqui estão as publicações relacionadas ao tema segurança")
+    st.dataframe(df2[df2['Temas'] == 'Segurança'])
+   
 
 
 if __name__ == '__main__':
